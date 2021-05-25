@@ -1,2 +1,5 @@
 Game/**
 Game/.vs/**
+.DS_Store
+glad/**
+glm/**
