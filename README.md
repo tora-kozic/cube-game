@@ -22,18 +22,10 @@ Outside of game functionality, I’d really like to improve how some of the prog
 The world can be resized to any dimension in the horizontal directions, however the vertical depth is currently  limited to 16.  To generate the world, a 3D array with the desired world dimensions stores integers which each indicate a corresponding block.  If an index contains 0, that means there’s no block at that location; if it contains a number between 1-10, that integer corresponds to some block (eg. 1-stone, 2-dirt, etc.).  To populate this array, the indices are looped through and assigned an integer based on their depth.  At a depth of 0, only bedrock blocks are seen.  At a depth of 1, there’s an 8% random chance of a diamond block being placed, otherwise it will be stone.  At each underground depth, the percentage chance of certain ores changes, and the array is filled accordingly.  This array is parsed through when drawing the geometry and the texture of the cube model is determined by the integer at that index in the array. 
 
 To generate the above-world characteristics, grass blocks are generated at a 2.5% chance two layers above the flat ground.  To make the peaks more gradual, there’s then a 50% chance of blocks spawning next to that block on that layer.  On the next layer down, dirt blocks fill the space beneath those grass blocks, and then there’s a 50% chance of grass blocks spreading around those filler blocks.  The ground layer is looped through again to replace any now-covered grass blocks with dirt blocks.  Finally, between 3-8 trees are generated at random positions to finish off the above-ground landscape details.   Because the full resolution Minecraft textures are not publicly available, all textures were recreated using pixel art software and then exported at a higher resolution for use with OpenGL.
-![32x32 generated world](/assets/map5.png) 
-**Image:** A 32x32 generated world. 
 
 <p align="middle">
-  <figure width="50%" >
-  <img src="/assets/map3.png"/> 
-    <figcaption>A 16x16 generated world.</figcaption>
-  </figure>
-  <figure width="50%" >
-  <img src="/assets/map5.png" /> 
-    <figcaption> A 32x32 generated world. </figcaption>
-  </figure>
+  <img src="/assets/map3.png" width="50%"/> 
+  <img src="/assets/map5.png" width="50%"/> 
 </p>
 
 ### Placing & Breaking Blocks
