@@ -26,12 +26,12 @@ To generate the above-world characteristics, grass blocks are generated at a 2.5
 **Image:** A 32x32 generated world. 
 
 <p align="middle">
-  <figure>
-  <img src="/assets/map3.png" width="50%" /> 
+  <figure width="50%" >
+  <img src="/assets/map3.png"/> 
     <figcaption>A 16x16 generated world.</figcaption>
   </figure>
-  <figure>
-  <img src="/assets/map5.png" width="50%" /> 
+  <figure width="50%" >
+  <img src="/assets/map5.png" /> 
     <figcaption> A 32x32 generated world. </figcaption>
   </figure>
 </p>
