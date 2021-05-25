@@ -25,8 +25,9 @@ To generate the above-world characteristics, grass blocks are generated at a 2.5
 
 <p align="middle">
   <img src="/assets/map3.png" width="48%"/> 
-  <img src="/assets/map5.png" width="48%"/> 
+  <img src="/assets/map5.png" width="50%"/> 
 </p>
+
 **Images:** 16x16 and 32x32 generated worlds, respectively.
 
 ### Placing & Breaking Blocks
