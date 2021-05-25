@@ -23,7 +23,12 @@ The world can be resized to any dimension in the horizontal directions, however 
 
 To generate the above-world characteristics, grass blocks are generated at a 2.5% chance two layers above the flat ground.  To make the peaks more gradual, there’s then a 50% chance of blocks spawning next to that block on that layer.  On the next layer down, dirt blocks fill the space beneath those grass blocks, and then there’s a 50% chance of grass blocks spreading around those filler blocks.  The ground layer is looped through again to replace any now-covered grass blocks with dirt blocks.  Finally, between 3-8 trees are generated at random positions to finish off the above-ground landscape details.   Because the full resolution Minecraft textures are not publicly available, all textures were recreated using pixel art software and then exported at a higher resolution for use with OpenGL.
 
-![32x32 generated world](/assets/map5.png) | ![16x16 generated world](/assets/map3.png)
+
+
+<p align="middle">
+  <img src="/assets/map5.png" width="45%" /> 
+  <img src="/assets/map3.png" width="45%" /> 
+</p>
 
 ### Placing & Breaking Blocks
 Breaking blocks is done by left-clicking and placing blocks is done by right-clicking.  However, currently player’s can only break and place blocks by clicking on the topmost face of any of the block cubes.  With both actions, the first step is taking the player’s current camera position and front-facing direction to determine the coordinate position of where it intersects the horizontal plane corresponding to the topmost-face of whatever block is in the center of the player’s view.  This position must then be converted to the corresponding index of the block to be interacted with (either broken or placed on top of). To do this, I used a recursive function which takes the player’s camera position  and direction and calculates the index of the nearest intersected grid space, starting at the tallest height of all possible grid spaces to avoid accidentally allowing the player to break blocks behind/below the ones currently visible to them.  If this gridspace is empty, then the function recurses at one height depth lower; this continues until it finds a valid block to interact with - it then returns those index values. 
@@ -31,6 +36,8 @@ Breaking blocks is done by left-clicking and placing blocks is done by right-cli
 To actually break a block, the index returned by the discussed function is set to 0 in the array which stores all the block data. To place a block, there’s an additional condition that the index above that returned index is empty.  If that is true, then that above index is changed from 0 to whatever block the player is currently holding.  
 
 ![drawn diagram of the player view algorithm](/assets/player%20alg.png)
+**Image:** The algorithm will calculate hit-point A first, but because A’s corresponding grid space(pink box) is empty, it will then find the player view rays’ intersection at the next depth lower.  Because hit-point B’s block is not empty, the indices of that block space will be returned.  
+
 
 ### Player Movement & Collision
 The player views the game in first person, with a small square indicating their “crosshair”, or the center of their screen, and a static block in the bottom right indicating the current block they are placing.  Player movement is conducted using the WASD keys and the mouse, with the mouse rotating the player’s camera and the WASD keys moving the player relative to the direction they’re currently looking in.  The player can also jump using the spacebar.  
@@ -38,3 +45,5 @@ The player views the game in first person, with a small square indicating their 
 Player collision is done by taking the player’s current velocities in the x, y and z directions, applying this velocity to predict their next position, and then using that position when calculating any potential collisions.  The collision calculation works by taking this future position, converting it into the corresponding grid index that the player will be moving towards, and then checking if that position is open.  If it isn’t open, the player’s velocity in that direction will be set to 0 once their position is within a certain radius to that next block’s collision boundary.  
 
 ![screenshot of the player's first-person view](/assets/ui.png)
+**Image:** First-person player view, with crosshair and current block UI elements highlighted. 
+
