@@ -27,6 +27,7 @@ To generate the above-world characteristics, grass blocks are generated at a 2.5
   <img src="/assets/map3.png" width="48%"/> 
   <img src="/assets/map5.png" width="48%"/> 
 </p>
+**Images:** 16x16 and 32x32 generated worlds, respectively.
 
 ### Placing & Breaking Blocks
 Breaking blocks is done by left-clicking and placing blocks is done by right-clicking.  However, currently player’s can only break and place blocks by clicking on the topmost face of any of the block cubes.  With both actions, the first step is taking the player’s current camera position and front-facing direction to determine the coordinate position of where it intersects the horizontal plane corresponding to the topmost-face of whatever block is in the center of the player’s view.  This position must then be converted to the corresponding index of the block to be interacted with (either broken or placed on top of). To do this, I used a recursive function which takes the player’s camera position  and direction and calculates the index of the nearest intersected grid space, starting at the tallest height of all possible grid spaces to avoid accidentally allowing the player to break blocks behind/below the ones currently visible to them.  If this gridspace is empty, then the function recurses at one height depth lower; this continues until it finds a valid block to interact with - it then returns those index values. 
