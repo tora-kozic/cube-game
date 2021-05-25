@@ -1,0 +1,52 @@
+﻿  game.cpp
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(19,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(49,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(51,36): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(52,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(59,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(69,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(71,36): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(72,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\objects.h(80,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(57,63): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(65,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(84,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(668,28): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(676,33): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(677,33): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(737,51): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(738,57): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(742,51): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(743,57): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(929,16): warning C4101: 'j': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(929,13): warning C4101: 'i': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(1198,18): warning C4101: 'idxRange': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(1198,8): warning C4101: 'posRange': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(1199,16): warning C4101: 'posMax': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(1199,8): warning C4101: 'posMin': unreferenced local variable
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\game.cpp(1197,8): warning C4101: 'f': unreferenced local variable
+  Game.vcxproj -> C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\Game\x64\Debug\Game.exe

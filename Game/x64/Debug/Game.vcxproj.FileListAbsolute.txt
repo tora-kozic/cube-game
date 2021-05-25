@@ -1,0 +1,6 @@
+C:\Users\torak\Documents\CLASSES\CSCI5607\P4\MultiObjectTextures\Game\x64\Debug\Game.exe
+C:\Users\torak\Documents\CLASSES\CSCI5607\P4\MultiObjectTextures\Game\x64\Debug\Game.pdb
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\MultiObjectTextures\Game\x64\Debug\Game.exe
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\MultiObjectTextures\Game\x64\Debug\Game.pdb
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\Game\x64\Debug\Game.exe
+C:\Users\torak\Documents\CLASSES\CSCI5607\final\game\Game\x64\Debug\Game.pdb
