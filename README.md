@@ -24,8 +24,8 @@ The world can be resized to any dimension in the horizontal directions, however 
 To generate the above-world characteristics, grass blocks are generated at a 2.5% chance two layers above the flat ground.  To make the peaks more gradual, there’s then a 50% chance of blocks spawning next to that block on that layer.  On the next layer down, dirt blocks fill the space beneath those grass blocks, and then there’s a 50% chance of grass blocks spreading around those filler blocks.  The ground layer is looped through again to replace any now-covered grass blocks with dirt blocks.  Finally, between 3-8 trees are generated at random positions to finish off the above-ground landscape details.   Because the full resolution Minecraft textures are not publicly available, all textures were recreated using pixel art software and then exported at a higher resolution for use with OpenGL.
 
 <p align="middle">
-  <img src="/assets/map3.png" width="50%"/> 
-  <img src="/assets/map5.png" width="50%"/> 
+  <img src="/assets/map3.png" width="48%"/> 
+  <img src="/assets/map5.png" width="48%"/> 
 </p>
 
 ### Placing & Breaking Blocks
