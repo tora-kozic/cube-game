@@ -2,9 +2,6 @@
 //Tora Kozic - kozic009 - 5404403
 //May 2021
 
-//Code structure from Multi-Object, Multi-Texture Example
-//Stephen J. Guy, 2021
-
 const char* INSTRUCTIONS = " ";
 
 //Mac OS build: g++ multiObjectTest.cpp -x c glad/glad.c -g -F/Library/Frameworks -framework SDL2 -framework OpenGL -o MultiObjTest
