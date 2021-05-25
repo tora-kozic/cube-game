@@ -35,7 +35,8 @@ Breaking blocks is done by left-clicking and placing blocks is done by right-cli
 
 To actually break a block, the index returned by the discussed function is set to 0 in the array which stores all the block data. To place a block, there’s an additional condition that the index above that returned index is empty.  If that is true, then that above index is changed from 0 to whatever block the player is currently holding.  
 
-![drawn diagram of the player view algorithm](/assets/player%20alg.png)
+<img src="/assets/player alg.png" width = "50%"/>
+
 **Image:** The algorithm will calculate hit-point A first, but because A’s corresponding grid space(pink box) is empty, it will then find the player view rays’ intersection at the next depth lower.  Because hit-point B’s block is not empty, the indices of that block space will be returned.  
 
 
