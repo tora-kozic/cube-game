@@ -4,6 +4,8 @@ Implementation of the simplest elements of minecraft in OpenGL.
 ## Overview
 *(As of May 2021.)*
 
+[Demo video here.](https://drive.google.com/file/d/1anIOkCU6k5jPAZ_KL5CpkQRP48T3tQ5s/view?usp=sharing)
+
 ### Project Description 
 My initial goals for this project were to begin by generating a flat world of dirt blocks with stone blocks underneath until they reach some depth.  From there, I would use the same FPS camera functionality from Project 4 to allow the player to walk around the world, jump, and place dirt blocks using right-click. From there, I was hoping for the player to be able to break blocks using left-click, and then pick up those blocks.  I was also aiming to add more variety to the landscape by generating trees, various ores at different depths,  and varying the heights of the surface-level landscape rather than just having it be open and flat.  
 I ended up implementing almost all of these functions in some form! The only one I didn’t quite get around to was incorporating blocks to drop and be picked up after they were broken.  In place of this, I made the block the player was placing the same as the last one broken, with a few caveats.  For instance, similar to the actual game, when you break a stone block, the player then can place cobblestone blocks.  
